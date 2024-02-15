@@ -42,3 +42,5 @@ function createRectangle() {
         }
     };
 }
+
+let rectta = createRectangle();
