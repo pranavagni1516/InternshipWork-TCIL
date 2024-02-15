@@ -18,3 +18,14 @@ console.log(names);
 let age = 17;
 let statuss = (age >= 18) ? 'Yes Vote' : 'No Vote';
 console.log(statuss)
+
+// object creation
+const rectangle = {
+    len:1,
+    bre:2,
+
+    // method
+    draw: function(){
+        console.log("draw");
+    }
+};
