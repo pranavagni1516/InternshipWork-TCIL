@@ -29,3 +29,16 @@ const rectangle = {
         console.log("draw");
     }
 };
+
+// factory function
+
+function createRectangle() {
+    return rectangle1 = {
+        len:1,
+        bre:2,
+
+        draw: function(){
+            console.log("drawing");
+        }
+    };
+}
