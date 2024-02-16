@@ -44,3 +44,7 @@ function createRectangle() {
 }
 
 let rectta = createRectangle();
+
+rectta.color = 'yellow';
+
+delete rectta.color;
