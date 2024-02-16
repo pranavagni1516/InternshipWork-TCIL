@@ -48,3 +48,12 @@ let rectta = createRectangle();
 rectta.color = 'yellow';
 
 delete rectta.color;
+
+
+// string primitive and object
+
+let lastName = 'Babbar';
+console.log(lastName , typeof lastName);
+
+let firstName = new String('Babbar');
+console.log(firstName , typeof firstName);
