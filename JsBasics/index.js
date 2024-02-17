@@ -57,3 +57,16 @@ console.log(lastName , typeof lastName);
 
 let firstName = new String('Babbar');
 console.log(firstName , typeof firstName);
+
+
+let courses = [
+    {no:1,naam:'love'},
+    {no:2,naam:'rahul'}
+];
+
+console.log(courses);
+
+let course = courses.find(function(course){
+    return course.naam =='love';
+});
+console.log(course);
