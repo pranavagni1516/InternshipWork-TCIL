@@ -3,6 +3,13 @@ let qrImg = document.getElementById("qrImg");
 let qrText = document.getElementById("qrText");
 let button = document.getElementById("genBut");
 
+qrText.addEventListener('keydown',(e)=>{
+    if(e.key ==='Enter'){
+        e.preventDefault();
+        button.click();
+    }
+});
+
 button.addEventListener('click',(e)=>{
     e.preventDefault();
     qrGenerate();
