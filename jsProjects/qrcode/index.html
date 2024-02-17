@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <style>
+        #sec{
+          --s:150px;
+          background:linear-gradient(135deg,#0000 18.75%,#5E412F 0 31.25%,#0000 0),
+          repeating-linear-gradient(45deg,#5E412F -6.25% 6.25%,#FCEBB6 0 18.75%);
+          background-size: var(--s) var(--s); 
+       }
+    </style>
+    <title>QrCode</title>
+  </head>
+  <body>
+    <section
+      class="relative flex overflow-hidden bg-[#262a2f] min-h-screen flex-col justify-center"
+      id="sec"
+    >
+      <div
+        class="p-4 mx-auto w-[400px] bg-white h-[400px] rounded-md flex flex-col space-y-5 "
+      >
+        <p class="text-center font-bold">Enter your Url</p>
+        <input
+          type="text"
+          placeholder="Url or Text"
+          class="rounded-md border h-14 border-[#494eea] text-start p-2"
+          id="qrText"
+        />
+        <div id="imgBox" class="w-[151px] h-[151px] rounded-md border border-[#494eea] mx-auto">
+          <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=Example" id="qrImg" class="mx-auto p-4"/>
+        </div>
+        <button
+          id="genBut"
+          class="cursor-pointer rounded-md border bg-[#494eea] text-white shadow-md h-14 hover:bg-black transition-all duration-200"
+        >
+          Generate Qr Code
+        </button>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
