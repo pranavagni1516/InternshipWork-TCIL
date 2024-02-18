@@ -70,3 +70,11 @@ let course = courses.find(function(course){
     return course.naam =='love';
 });
 console.log(course);
+
+// default parameters
+
+function sI(p,r,y){
+    return (p*r*y/100);
+};
+
+console.log(sI(1000,10,5));
