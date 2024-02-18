@@ -73,8 +73,45 @@ console.log(course);
 
 // default parameters
 
-function sI(p,r,y){
+function sI(p,r=5,y){
     return (p*r*y/100);
 };
 
 console.log(sI(1000,10,5));
+
+// Getter and setter
+let person = {
+    fName : 'Pranav',
+    lName : 'Agnihotri',
+
+    get fullName(){
+        return `${person.fName} ${person.lName}`;
+    },
+
+    set fullName(value){
+        // if(typeof(value) != String){
+        //     throw new Error("Not a string");
+        // }
+        let parts = value.split(' ');
+        this.fName = parts[0];
+        this.lName = parts[1];
+    }
+};
+
+console.log(person.fullName);
+person.fullName = 'Rahul Kumar';
+console.log(person.fullName);
+
+
+
+// person.fullName = 1;
+
+// try catch
+try{
+    person.fullName = true;
+}
+catch(e){
+    alert(e);
+}
+
+console.log(person.fullName);
