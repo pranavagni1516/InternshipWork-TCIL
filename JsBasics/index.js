@@ -1,3 +1,6 @@
+let content = document.getElementsByTagName('h1');
+
+
 // dynamic typed language 
 console.log("Namaste Dunia")
 // Named memory location is variable by let
@@ -115,3 +118,7 @@ catch(e){
 }
 
 console.log(person.fullName);
+
+// adding event listner
+
+content.addEventListner('click',function(){console.log("clicked")});
