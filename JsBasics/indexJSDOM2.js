@@ -17,4 +17,5 @@ for(let i=0;i<100;i++){
     myDiv.appendChild(newElement);
 }
 
+
 document.body.appendChild(myDiv);
