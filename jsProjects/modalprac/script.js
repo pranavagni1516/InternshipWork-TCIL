@@ -9,4 +9,8 @@ const openModal = () =>{
 const closeModal = () =>{
     modal.classList.remove("active");
     overlay.classList.remove("overlayactive");
+};
+const openPort = ()=>{
+    var link = "https://bit.ly/pagni15";
+    window.location.href = link;
 }
