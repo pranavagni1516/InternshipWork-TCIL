@@ -40,3 +40,21 @@ const userInfoContainer = document.querySelector(".user-info-container");
 let currentTab = userTab;
 const API_KEY = "f27c81e2ae10b3f5626690bb00d2d69c";
 currentTab.classList.add("current-tab");
+
+function switchTab(clickedTab){
+    if(clickedTab !=currentTab){
+        currentTab.classList.remove("current-tab");
+        currentTab = clickedTab;
+        currentTab.classList.add("current-tab");
+    }
+};
+
+userTab.addEventListener("click",()=>{
+    // pass clicked tab as input
+    switchTab(userTab);
+});
+
+searchTab.addEventListener("click",()=>{
+    // pass clicked tab as input
+    switchTab(searchTab);
+});
