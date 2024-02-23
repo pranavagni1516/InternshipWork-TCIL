@@ -274,7 +274,7 @@ function renderWeatherInfo(weatherInfo) {
     const desc = document.querySelector("[data-weatherDesc]");
     const weatherIcon = document.querySelector("[data-weatherIcon]");
     const temp = document.querySelector("[data-temp]");
-    const windspeed = document.querySelector("[data-windspeed]");
+    const windspeed = document.querySelector("[data-windpeed]");
     const humidity = document.querySelector("[data-humidity]");
     const cloudiness = document.querySelector("[data-cloudiness]");
 
@@ -284,9 +284,9 @@ function renderWeatherInfo(weatherInfo) {
     desc.innerText = weatherInfo?.weather?.[0]?.description;
     weatherIcon.src = `http://openweathermap.org/img/w/${weatherInfo?.weather?.[0]?.icon}.png`;
     temp.innerText = weatherInfo?.main?.temp + " °C";
-    windspeed.innertext = weatherInfo?.wind?.speed;
-    humidity.innertext = weatherInfo?.main?.humidity;
-    cloudiness.innerText = weatherInfo?.clouds?.all;
+    windspeed.innerText = weatherInfo?.wind?.speed + " m/s";
+    humidity.innerText = weatherInfo?.main?.humidity + " %";
+    cloudiness.innerText = weatherInfo?.clouds?.all + " %";
 
 
 }
