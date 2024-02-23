@@ -94,7 +94,7 @@ async function fetchWeatherInfo(coordinates){
     }
 };
 
-function renderWeatherInfo(data){
+function renderWeatherInfo(weatherInfo){
     const cityName = document.querySelector("[data-cityName]");
     const countryIcon = document.querySelector("[data-countryIcon]");
     const desc = document.querySelector("[data-weatherDesc]");
@@ -103,6 +103,16 @@ function renderWeatherInfo(data){
     const windspeed = document.querySelector("[data-windspeed]]");
     const humidity = document.querySelector("[data-humidity]]");
     const cloudiness = document.querySelector("[data-cloudiness]]");
+
+    cityName.innerText = weatherInfo?.name;
+    countryIcon.src = `https://flagcdn.com/144x108/${weatherInfo?.sys?.country.toLowerCase()}.png`;
+    desc.innerText = weatherInfo?.weather?.[0]?.description;
+    weatherIcon.src = `https://openweathermap.org/img/w/${weatherInfo?.weather?.[0]?.icon}.png`;
+    temp.innerText = weatherIcon?.main?.temp;
+    windspeed.innerText = weatherIcon?.wind?.speed;
+    humidity.innerText = weatherIcon?.main?.humidity;
+    cloudiness.innerText = weatherIcon?.clouds?.all;
+
 };
 
 
