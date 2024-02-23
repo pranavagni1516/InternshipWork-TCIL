@@ -117,6 +117,9 @@ function renderWeatherInfo(weatherInfo){
 
 
 
+const gAB = document.querySelector("[data-grantAccess");
+gAB.addEventListener("click",getLocation);
+
 userTab.addEventListener("click",()=>{
     // pass clicked tab as input
     switchTab(userTab);
