@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import Card from './Card.jsx'
 
 function Forground() {
+   const ref = useRef(null);
+
     const data = [
         {
             desc:"Lorem ipsum, dolor sit amet consectetur adipisicing.",
@@ -18,15 +20,15 @@ function Forground() {
         {
             desc:"Lorem ipsum, dolor sit amet consectetur adipisicing.",
             fileSize:".9 mb",
-            close: false,
-            tag:{isOpen:true,tagTitle:"Download Now",tagColor:"green"},
+            close: true,
+            tag:{isOpen:true,tagTitle:"Upload",tagColor:"green"},
         },
     ];
   return (
     <>
-      <div className='fixed top-0 left-0 z-[3] w-full h-full flex gap-10 flex-wrap p-5'>
+      <div ref={ref} className='fixed top-0 left-0 z-[3] w-full h-full flex gap-10 flex-wrap p-5'>
         {data.map((item,index)=>(
-            <Card data={item}/>
+            <Card data={item} reference={ref} />
         ))}
       </div>
     </>
