@@ -13,7 +13,7 @@ function Forground() {
             desc:"Lorem ipsum, dolor sit amet consectetur adipisicing.",
             fileSize:".9 mb",
             close: false,
-            tag:{isOpen:true,tagTitle:"Download Now",tagColor:"green"},
+            tag:{isOpen:true,tagTitle:"Download Now",tagColor:"blue"},
         },
         {
             desc:"Lorem ipsum, dolor sit amet consectetur adipisicing.",
@@ -24,7 +24,7 @@ function Forground() {
     ];
   return (
     <>
-      <div className='fixed top-0 left-0 z-[3] w-full h-full flex gap-5 flex-wrap'>
+      <div className='fixed top-0 left-0 z-[3] w-full h-full flex gap-10 flex-wrap p-5'>
         {data.map((item,index)=>(
             <Card data={item}/>
         ))}
