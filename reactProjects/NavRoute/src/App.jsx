@@ -1,10 +1,10 @@
 import React from 'react';
-
+import Navbar from './components/Navbar'
 
 function App() {
   return (
-    <div className='relative w-full h-screen bg-zinc-800 font-roboto'>
-      
+    <div>
+      <Navbar/>
     </div>
   )
 }
