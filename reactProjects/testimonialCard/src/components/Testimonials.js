@@ -28,7 +28,7 @@ const Testimonials = (props) => {
     }
 
   return (
-    <div className='flex flex-col mx-auto space-y-6 w-[700px] bg-slate-100 mt-4 rounded-md'>
+    <div className='flex flex-col mx-auto space-y-6 w-[95vw] md:w-[700px] justify-center items-center mt-10 p-10 bg-slate-100 transition-all duration-200 rounded-md'>
     
         <Card review={reviews[index]}/>
         <div className='text-3xl flex mt-5 gap-3 text-violet-400 font-bold mx-auto'>
