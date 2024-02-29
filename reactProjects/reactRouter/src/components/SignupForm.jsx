@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import {AiOutlineEye,AiOutlineEyeInvisible} from "react-icons/ai"
 
-const SignupForm = () => {
+const SignupForm = ({setIsLoggedIn}) => {
     const [showPass,setShowPass] = useState(false);
     const[formData,setFormData] = useState({firstName:"",lastName:"",email:"",password:"",confirmPassword:""})
     function changeHandler(event){
