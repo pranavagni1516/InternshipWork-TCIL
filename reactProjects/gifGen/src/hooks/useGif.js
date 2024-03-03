@@ -7,7 +7,9 @@ const API_KEY = process.env.REACT_APP_GIPHY_API_KEY;
 
 
 const useGif = (tag) => {
+
     const [gif,setGif] = useState('');
+
     const [loading,setLoading] = useState(false);
    
     
@@ -18,6 +20,8 @@ const useGif = (tag) => {
       setGif(imageSource);
       setLoading(false);
     }
+
+    
     useEffect(()=>{
       fetchData();
     },[])
