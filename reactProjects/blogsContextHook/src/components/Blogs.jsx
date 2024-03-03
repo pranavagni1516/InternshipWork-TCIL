@@ -1,14 +1,22 @@
 import React from 'react'
 import { useContext } from 'react'
 import { AppContext } from '../context/AppContext'
-import { Loader } from './Loader.jsx'
+import Loader from './Loader'
 
 const Blogs = () => {
-    const {loading} = useContext(AppContext);
+    const {posts,loading} = useContext(AppContext);
   return (
     <div>
         {
-            loading ? (<Loader/>):(<div>hi</div>)
+            loading ? 
+            (<Loader/>) : 
+            (
+                posts.length === 0 ? 
+                (<div>
+                    <p>No Post Found</p>
+                </div>) :
+                (<div></div>)
+            )
         }
     </div>
   )
