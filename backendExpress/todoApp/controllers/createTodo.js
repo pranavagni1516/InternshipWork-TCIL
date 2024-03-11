@@ -8,12 +8,15 @@ exports.createTodo = async(req,res) => {
             //extract title and desxcription from reauest body
             const {title,description} = req.body;
             //create a new Todo Obj and insert in DB
-            const response = await Todo.create({title,description});
+            
+            const res = await Todo.create({title,description});
+
             //send a json response with a success flag
+
             res.status(200).json(
                 {
                     success:true,
-                    data:response,
+                    data:res,
                     message:'Entry Created Successfully'
                 }
             );
