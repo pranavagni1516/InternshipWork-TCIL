@@ -8,14 +8,14 @@ dotenv.config();
 mongoose.connect(process.env.MONGO_URL);
 jwtSecret = process.env.JWT_SECRET;
 const app = express();
-
+// console.log(jwtSecret)
 app.use(cors({
     credentials:true,
     origin:process.env.CLIENT_URL,
 }));
 
 app.get('/test',(req,res)=>{
-    res.json('test ok');
+    res.json('test okk');
 });
 
 app.post('/register',async (req,res)=>{

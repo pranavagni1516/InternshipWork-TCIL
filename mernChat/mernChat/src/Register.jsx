@@ -4,8 +4,8 @@ const Register = () => {
   const [username, setUserName] = useState('');
   const [password, setPassword] = useState('');
 
-  async function register(ev){
-      ev.preventDefault();
+  async function register(e){
+      e.preventDefault();
       await axios.post('/register',{username,password});
   };
 
