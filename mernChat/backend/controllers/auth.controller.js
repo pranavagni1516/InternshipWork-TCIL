@@ -1,8 +1,9 @@
-import User from "../models/user.model.js"
+import bcryptjs form "bcryptjs";
+import User from "../models/user.model.js";
 
 export const signup = async (req,res) =>{
     try {
-        const {fullName,username,confirmPassword,gender} = req.body;
+        const {fullName,username,password,confirmPassword,gender} = req.body;
         if(password !== confirmPassword){
             return res.status(400).json({error:"Passwords dont match"})
         } 
@@ -16,7 +17,12 @@ export const signup = async (req,res) =>{
         const girlProfilePic = `https://avatar.iran.liara.run/public/girl?username=${username}`;
 
         const newUser = new User({
-            fullName,username,confirmPassword,gender,profilePic:gender === 'male' ? boyProfilePic : girlProfilePic
+            fullName,
+            username,
+            password,
+            confirmPassword,
+            gender,
+            profilePic:gender === "male" ? boyProfilePic : girlProfilePic
         })
         await newUser.save();
         res.status(201).json({
@@ -26,8 +32,15 @@ export const signup = async (req,res) =>{
             profilePic:newUser.profilePic
         });
     } catch (error) {
-        
+        console.log("Error in signup controller",error.message);
+        res.status(500).json({error:"Internal server error"});
     }
 };
 export const login = (req,res) =>{console.log("login user");};
-export const logout = (req,res) =>{console.log("logout user");;}
+export const logout = (req,res) =>{console.log("logout user");};
+
+// export const signup = (req,res)=>{
+//     res.send("signup")
+//     console.log("signup")}
+// export const login = (req,res)=>{console.log("signup")}
+// export const logout = (req,res)=>{console.log("signup")}
