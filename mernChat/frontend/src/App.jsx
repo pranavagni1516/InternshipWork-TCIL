@@ -1,14 +1,17 @@
-import { useState } from 'react'
-import Register from "./Register"
-import axios from "axios"
+import React from 'react'
 
-function App() {
- axios.defaults.baseURL = 'http://localhost:4040';
- axios.defaults.withCredentials = true;
-
+const App = () => {
   return (
     <>
-      <Register/>
+      <button className="btn">Button</button>
+      <button className="btn btn-neutral">Neutral</button>
+      <button className="btn btn-primary">Primary</button>
+      <button className="btn btn-secondary">Secondary</button>
+      <button className="btn btn-accent">Accent</button>
+      <button className="btn btn-ghost">Ghost</button>
+      <button className="btn btn-link">Link</button>
+
+
     </>
   )
 }
