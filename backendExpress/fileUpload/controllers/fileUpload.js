@@ -50,12 +50,12 @@ exports.imageUpload = async (req,res)=>{
         const response = await uploadFileToCloudinary(file,"codehelp");
         console.log(response);
 
-        // const fileData = await File.create({
-        //     name,
-        //     tags,
-        //     email,
-        //     imageUrl
-        // });
+        const fileData = await File.create({
+            name,
+            tags,
+            email,
+            imageUrl
+        });
 
         res.json({
             success:true,
