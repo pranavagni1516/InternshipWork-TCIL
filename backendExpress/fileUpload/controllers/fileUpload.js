@@ -23,7 +23,7 @@ function isFileTypeSupported(type,supportedType) {
 
 async function uploadFileToCloudinary(file,folder){
     const options={folder};
-    await cloudinary.uploader.upload(file.tempFilePath,options);
+    return await cloudinary.uploader.upload(file.tempFilePath,options);
 };
 
 exports.imageUpload = async (req,res)=>{
@@ -54,7 +54,7 @@ exports.imageUpload = async (req,res)=>{
             name,
             tags,
             email,
-            imageUrl
+            imageUrl:response.secure_url,
         });
 
         res.json({
