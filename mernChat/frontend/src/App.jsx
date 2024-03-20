@@ -6,7 +6,6 @@ function App(){
     <div className="p-4 h-screen resize flex items-center justify-center">
       <Home/>
       {/* <Login/> */}
-      <Home/>
       {/* <SignUp/> */}
     </div>
   )
