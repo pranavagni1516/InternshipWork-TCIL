@@ -2,7 +2,7 @@ import React from 'react'
 import GenderCheckbox from './GenderCheckBox'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
-// import useSignup from "../../hooks/useSignup.js"
+import useSignup from "../../hooks/useSignup.js"
 
 const SignUp = () => {
   const { loading, signup } = useSignup();
@@ -18,8 +18,8 @@ const SignUp = () => {
 	};
   const handleSubmit = async (e)=>{
       e.preventDefault();
-      // await signup(inputs);
-      await console.log(inputs);
+      await signup(inputs);
+      // await console.log(inputs);
   };
 
   return (
