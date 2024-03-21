@@ -9,12 +9,12 @@ function App(){
   const {authUser} = useAuthContext();
   return (
     <div className="p-4 h-screen resize flex items-center justify-center">
-      {/* <Home/> */}
-      {/* <Login/> */}
-      {/* <SignUp/> */}
       <Routes>
+      {/* <Home/> */}
         <Route path="/" element={!authUser?<Navigate to={"/login"}/>:<Home/>} />
+      {/* <Login/> */}
         <Route path="/login" element={authUser ? <Navigate to="/"/> :<Login/>} />
+      {/* <SignUp/> */}
         <Route path="/signup" element={authUser ? <Navigate to="/"/>:<SignUp/>} />
       </Routes>
       <Toaster/>
