@@ -60,14 +60,13 @@ exports.isStudent = async (req, res, next) => {
  }
 }
 
-
-//isInstructor
-exports.isInstructor = async (req, res, next) => {
+//isAdmin
+exports.isAdmin = async (req, res, next) => {
     try{
-           if(req.user.accountType !== "Instructor") {
+           if(req.user.accountType !== "Admin") {
                return res.status(401).json({
                    success:false,
-                   message:'This is a protected route for Instructor only',
+                   message:'This is a protected route for Admin only',
                });
            }
            next();
@@ -80,14 +79,13 @@ exports.isInstructor = async (req, res, next) => {
     }
    }
 
-
-//isAdmin
-exports.isAdmin = async (req, res, next) => {
+//isInstructor
+exports.isInstructor = async (req, res, next) => {
     try{
-           if(req.user.accountType !== "Admin") {
+           if(req.user.accountType !== "Instructor") {
                return res.status(401).json({
                    success:false,
-                   message:'This is a protected route for Admin only',
+                   message:'This is a protected route for Instructor only',
                });
            }
            next();
