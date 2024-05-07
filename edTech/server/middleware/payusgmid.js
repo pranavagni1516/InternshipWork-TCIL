@@ -12,12 +12,7 @@ const CourseProgress = require("../models/CourseProgress")
 
 // Capture the payment and initiate the Razorpay order
 
-  const options = {
-    amount: total_amount * 100,
-    currency: "INR",
-    receipt: Math.random(Date.now()).toString(),
-  }
-
+  
   try {
     // Initiate the payment using Razorpay
     const paymentResponse = await instance.orders.create(options)
