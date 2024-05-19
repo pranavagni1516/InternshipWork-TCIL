@@ -12,8 +12,10 @@ function Cards() {
             src="https://tcilitchandigarh.com/images/tcilchandigarh_logo.png"
             alt=""
           />
-          <button className="absolute px-5 py-1 border-2 rounded-full left-10 top-[270px] text-white ">
-            &copy;2024
+          <button className="absolute px-5 py-1 border-2 rounded-full left-10 top-[270px] text-white hover:bg-black hover:text-white">
+            <a href="https://tcilitchandigarh.com/index.html">
+              Got a query ? Feel free to ask , we got you!
+            </a>
           </button>
         </div>
       </div>
@@ -26,8 +28,8 @@ function Cards() {
             src="https://tcilitchandigarh.com/images/tcilchandigarh_logo.png"
             alt=""
           />
-          <button className="absolute px-5 py-1 border-2 rounded-full left-10 top-[270px] text-white ">
-            RATING 5.0 ON CLUTCH
+          <button className="absolute px-5 py-1 border-2 rounded-full left-10 top-[270px] text-white  hover:bg-black">
+            <a href="https://tcilitchandigarh.com/query.php">&copy;2024</a>
           </button>
         </div>
         <div className="card relative flex items-center justify-center rounded-xl w-1/2 h-full bg-[#192826]">
@@ -38,8 +40,8 @@ function Cards() {
             src="https://tcilitchandigarh.com/images/tcilchandigarh_logo.png"
             alt=""
           />
-          <button className="absolute px-5 py-1 border-2 rounded-full left-10 top-[270px] text-white ">
-            &copy;2024
+          <button className="absolute px-5 py-1 border-2 rounded-full left-10 top-[270px] text-white  hover:bg-black transition  ">
+            <a href="https://tcilitchandigarh.com/blog.html">BLOGS</a>
           </button>
         </div>
       </div>
