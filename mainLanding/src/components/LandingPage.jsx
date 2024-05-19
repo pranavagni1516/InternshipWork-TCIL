@@ -41,7 +41,7 @@ function LandingPage() {
       <div className="border-t-[1px] border-zinc-800 mt-20 flex justify-between items-center py-5 px-20">
         {[
           "For public and private companies",
-          "From the first pitch to IPO",
+          ,
         ].map((item, index) => (
           <p
             key={index}
@@ -51,7 +51,7 @@ function LandingPage() {
           </p>
         ))}
         <div className="start flex items-center gap-5">
-          <div className="px-5 py-2 rounded-full border-[2px] cursor-pointer border-zinc-500 font-light text-sm uppercase relative overflow-hidden">
+          <div className=" hover:bg-black hover:text-white transition px-5 py-2 rounded-full border-[2px] cursor-pointer border-zinc-500 font-light text-sm uppercase relative overflow-hidden">
             <span className="absolute inset-0 bg-black transform scale-x-0 origin-left"></span>
             <span className="relative z-10">Start the project</span>
           </div>
