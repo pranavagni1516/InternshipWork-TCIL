@@ -7,11 +7,13 @@ function Cards() {
         <div className="card relative rounded-xl flex items-center justify-center w-full h-full bg-[#004D43]">
           <img
             className="w-32"
-            src="https://ochi.design/wp-content/uploads/2022/04/logo001.svg"
+            // src="https://ochi.design/wp-content/uploads/2022/04/logo001.svg"
+
+            src="https://tcilitchandigarh.com/images/tcilchandigarh_logo.png"
             alt=""
           />
           <button className="absolute px-5 py-1 border-2 rounded-full left-10 top-[270px] text-white ">
-            &copy;2019-2024
+            &copy;2024
           </button>
         </div>
       </div>
@@ -19,7 +21,9 @@ function Cards() {
         <div className="card relative flex items-center justify-center rounded-xl w-1/2 h-full bg-[#192826]">
           <img
             className="w-32"
-            src="https://ochi.design/wp-content/uploads/2022/04/logo001.svg"
+            // src="https://ochi.design/wp-content/uploads/2022/04/logo001.svg"
+
+            src="https://tcilitchandigarh.com/images/tcilchandigarh_logo.png"
             alt=""
           />
           <button className="absolute px-5 py-1 border-2 rounded-full left-10 top-[270px] text-white ">
@@ -29,7 +33,9 @@ function Cards() {
         <div className="card relative flex items-center justify-center rounded-xl w-1/2 h-full bg-[#192826]">
           <img
             className="w-32"
-            src="https://ochi.design/wp-content/uploads/2022/04/logo001.svg"
+            // src="https://ochi.design/wp-content/uploads/2022/04/logo001.svg"
+
+            src="https://tcilitchandigarh.com/images/tcilchandigarh_logo.png"
             alt=""
           />
           <button className="absolute px-5 py-1 border-2 rounded-full left-10 top-[270px] text-white ">
