@@ -16,7 +16,7 @@ function Marquee() {
           transition={{ repeat: Infinity, ease: "linear", duration: 5 }}
           className="text-[16vw] leading-none font-neue font-bold uppercase pt-10 mb-20 pr-32"
         >
-          We are Ochi
+          We are TCIL-IT
         </motion.h1>
         <motion.h1
           initial={{ x: "0" }}
@@ -24,7 +24,7 @@ function Marquee() {
           transition={{ repeat: Infinity, ease: "linear", duration: 5 }}
           className="text-[16vw] leading-none font-neue font-bold uppercase pt-10 mb-20 pr-32"
         >
-          We are Ochi
+          We are TCIL-IT
         </motion.h1>
       </div>
     </div>
